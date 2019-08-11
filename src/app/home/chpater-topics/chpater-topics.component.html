@@ -1,0 +1,8 @@
+<ion-content>
+<div class='topicList'>
+  <div class='topic' *ngFor='let topicVal of topicsList'>
+    <div class='topicHeading'>{{topicVal.topic}}</div>
+    <iframe [src] = 'urlLink(topicVal.link)'></iframe>
+  </div>
+</div>
+</ion-content>

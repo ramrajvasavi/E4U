@@ -1,0 +1,7 @@
+<ion-content>
+    <div id='chapterHeading'>{{chapter}}</div>
+    <div class='chapterList'>
+        <div *ngFor='let chap of chapterList' class='chapter' (click) ='selTopic($event)'>{{chap}}</div>
+    </div>
+</ion-content>
+

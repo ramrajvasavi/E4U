@@ -1,0 +1,7 @@
+<ion-content>
+    <div id='catHeading'>Categories</div>
+<div class='categoryList'>
+ <div *ngFor= 'let category of categoryList' class='category' (click)='navSubcategory($event)'>{{category.name}}</div>
+</div>
+
+</ion-content>
