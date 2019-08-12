@@ -1,11 +1,20 @@
-.topicList {
-    margin: 2rem 0 2rem 0;
-    font-size: 8vw;
-}
 .topicHeading {
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }
 .topic {
     margin-top: 1rem;
+}
+.open-toggle{
+    display: block;
+}
+.close-toggle {
+    display:none;
+}
+.topicContent{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.topicList{
+    margin-top: 2rem; 
 }
