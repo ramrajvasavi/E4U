@@ -6,7 +6,8 @@
     <iframe [src] = 'urlLink(topicVal.link)'></iframe>
   </div>
 </div> -->
-<ion-card *ngFor='let topicVal of topicsList; let i = index;' class='topicCard'>
+ <div id='topicHeading'><ion-icon name="arrow-round-back" class='backArrow' (click) = 'goBack()'></ion-icon>{{topicValue}}</div>
+<ion-card *ngFor='let topicVal of topicsList; let i = index;'class='topicCard'>
   <ion-card-header (click)='toggleOpen(i)' class='topicHeader'>
     {{topicVal.topic}}
   </ion-card-header>

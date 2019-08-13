@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { HttpModule } from '@angular/http';
 
 import { HomePage } from './home.page';
 import { SubcategoryComponent } from './subcategory/subcategory.component';
@@ -15,6 +16,7 @@ import { ChpaterTopicsComponent } from '../home/chpater-topics/chpater-topics.co
     CommonModule,
     FormsModule,
     IonicModule,
+    HttpModule,
     RouterModule.forChild([
       {
         path: '',

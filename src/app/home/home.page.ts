@@ -14,6 +14,7 @@ export class HomePage {
     private catServ: CategoryService) {}
   ngOnInit(){
     this.categoryList = environment.categoryList;
+    localStorage.setItem('isBackBtn', 'no');
   }
 
   navSubcategory(evt){

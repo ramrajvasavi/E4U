@@ -15,11 +15,27 @@ export class ChapterComponent implements OnInit {
 
   ngOnInit() {
     const chapters = environment.chapters;
-    this.chapter = this.catServ.getSelectedChapter();
-    this.chapterList = chapters[this.catServ.getSelectedChapter()];
+    if(localStorage.getItem('isBackBtn') !== undefined && localStorage.getItem('isBackBtn') !== null){
+      if(localStorage.getItem('isBackBtn') == 'yes') {
+      this.chapter = localStorage.getItem('pageValue');
+      localStorage.setItem('isBackBtn', 'no');
+      this.chapterList = chapters[this.chapter];
+      } else {
+        this.chapter = this.catServ.getSelectedChapter();
+        this.chapterList = chapters[this.catServ.getSelectedChapter()];
+      }
+    } else {
+      this.chapter = this.catServ.getSelectedChapter();
+      this.chapterList = chapters[this.catServ.getSelectedChapter()];
+    }
   }
   selTopic(evtObt){
     this.catServ.setSelectedTopic(evtObt.target.innerText);
     this.route.navigate(['/home/topic']);
+  }
+  goBack(){
+    localStorage.setItem('pageValue', this.chapter);
+    localStorage.setItem('isBackBtn', 'yes');
+    this.route.navigate(['/home/subcategory']);
   }
 }

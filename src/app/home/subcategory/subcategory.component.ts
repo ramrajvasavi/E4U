@@ -16,12 +16,27 @@ export class SubcategoryComponent implements OnInit {
 
   ngOnInit() {
     const subCat = environment.subCategory;
-    this.subCat = this.catServ.getSelectedSubCat();
-    this.subCategoryList = subCat[this.catServ.getSelectedSubCat()];
+    if(localStorage.getItem('isBackBtn') !== undefined && localStorage.getItem('isBackBtn') !== null){
+      if(localStorage.getItem('isBackBtn') == 'yes') {
+      this.subCat = localStorage.getItem('pageValue');
+      localStorage.setItem('isBackBtn', 'no');
+      this.subCategoryList = subCat[this.subCat];
+      } else {
+        this.subCat = this.catServ.getSelectedSubCat();
+        this.subCategoryList = subCat[this.catServ.getSelectedSubCat()];
+      }
+    } else {
+      this.subCat = this.catServ.getSelectedSubCat();
+      this.subCategoryList = subCat[this.catServ.getSelectedSubCat()];
+    }
   }
   chapter(evtObt){
     this.catServ.setSelectedChapter(evtObt.target.innerText);
     this.route.navigate(['/home/chapter']);
   }
-
+  goBack(){
+    localStorage.setItem('pageValue', this.subCat);
+    localStorage.setItem('isBackBtn', 'no');
+    this.route.navigate(['/home']);
+  }
 }

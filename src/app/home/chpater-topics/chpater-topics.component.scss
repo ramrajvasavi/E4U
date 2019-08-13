@@ -1,9 +1,6 @@
-.topicHeading {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-}
-.topic {
-    margin-top: 1rem;
+#topicHeading {
+    font-size: 8vw;
+    margin: 2rem 1rem;
 }
 .open-toggle{
     display: block;
@@ -17,4 +14,9 @@
 }
 .topicList{
     margin-top: 2rem; 
+}
+ion-icon.backArrow {
+    position: relative;
+    top: 4px;
+    margin-right: 0.4rem;
 }
