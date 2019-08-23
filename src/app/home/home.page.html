@@ -1,4 +1,4 @@
-<ion-content>
+<ion-content fullscreen class='ion-padding'>
     <div id='catHeading'>Categories</div>
 <div class='categoryList'>
  <div *ngFor= 'let category of categoryList' class='category' (click)='navSubcategory($event)'>{{category.name}}</div>

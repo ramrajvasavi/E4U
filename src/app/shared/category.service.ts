@@ -24,10 +24,10 @@ export class CategoryService {
   }
 
   setSelectedTopic(topic){
-    this.selChapter = topic;
+    this.topic = topic;
   }
   getSelectedTopic(){
-    return this.selChapter;
+    return this.topic;
   }
 
 }

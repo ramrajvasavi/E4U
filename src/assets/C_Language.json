@@ -1,0 +1,34 @@
+{
+    "Introduction": [
+        {
+            "topic": "Introduction to compiler designing",
+            "link": "https://www.youtube.com/embed/KBulg_u-b3w"
+        }
+    ],
+    "Phases of compiler": [
+        {
+            "topic": "phases of compiler part-1",
+            "link": "https://www.youtube.com/embed/KbriL-zIKMk"
+        },
+        {
+            "topic": "phases of compiler part- 2",
+            "link": "https://www.youtube.com/embed/UqovoRo-UCI"
+        },
+        {
+            "topic": "phases of compiler part-3",
+            "link": "https://www.youtube.com/embed/28GMXCkv0kM"
+        }
+    ],
+    "Lexical Analyzer": [
+        {
+            "topic": "lexical analyzer ",
+            "link": "https://www.youtube.com/embed/NPs4fseA-WY"
+        }
+    ],
+    "Cross compiler": [
+        {
+            "topic": "cross compiler",
+            "link": "https://www.youtube.com/embed/rHPScvNKcug"
+        }
+    ]
+}

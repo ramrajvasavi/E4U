@@ -13,7 +13,7 @@ export const environment = {
     {'name': 'Software Installations'}
   ],
   subCategory : {
-  'Engineering/MCA': ['C Language', 'Java', 'Python'],
+  'Engineering/MCA': ['C_Programming', 'Java', 'Python'],
   'Lab Programming "C"': ['Structures', 'Union','Data Structure']
  },
  chapters: {'C Language': ['Arrays', 'Variables','Structure'],

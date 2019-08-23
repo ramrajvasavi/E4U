@@ -6,13 +6,13 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-subcategory',
   templateUrl: './subcategory.component.html',
-  styleUrls: ['./subcategory.component.scss'],
+  styleUrls: ['./subcategory.component.scss']
 })
 export class SubcategoryComponent implements OnInit {
  subCategoryList = [];
  subCat = '';
   constructor( private catServ: CategoryService,
-    private route: Router ) { }
+    private route: Router) { }
 
   ngOnInit() {
     const subCat = environment.subCategory;
@@ -29,6 +29,7 @@ export class SubcategoryComponent implements OnInit {
       this.subCat = this.catServ.getSelectedSubCat();
       this.subCategoryList = subCat[this.catServ.getSelectedSubCat()];
     }
+    //this.subCat = 'C_Programming';
   }
   chapter(evtObt){
     this.catServ.setSelectedChapter(evtObt.target.innerText);
