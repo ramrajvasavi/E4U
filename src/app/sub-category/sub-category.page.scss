@@ -1,0 +1,16 @@
+.subCateList {
+    padding: 0.8rem;
+    background-image: linear-gradient(to bottom right, green, yellow);
+    margin: 0.4rem;
+    color: cyan;
+    cursor: pointer;
+}
+#subCatHeading {
+    margin: 0.8rem 2rem 1rem 0.5rem;
+    font-size: 8vw;
+}
+ion-icon.backArrow {
+    position: relative;
+    top: 4px;
+    margin-right: 0.4rem;
+}

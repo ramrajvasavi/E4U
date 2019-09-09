@@ -1,7 +1,5 @@
 {
-  "name": "Education4U",
-  "integrations": {
-    "cordova": {}
-  },
+  "name": "E4U",
+  "integrations": {},
   "type": "angular"
 }

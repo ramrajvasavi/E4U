@@ -1,7 +1,0 @@
-<ion-content fullscreen class='ion-padding'>
-    <div id='subCatHeading'>
-        <!-- <ion-icon name="arrow-round-back" class='backArrow' (click) = 'goBack()'></ion-icon> -->{{subCat}}</div>
-    <div class='subCat'>
-        <div *ngFor='let subCat of subCategoryList' class='subCateList' (click) = 'chapter($event)'>{{subCat.split('_').join(' ')}}</div>
-    </div>
-</ion-content>

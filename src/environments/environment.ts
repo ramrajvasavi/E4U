@@ -13,7 +13,7 @@ export const environment = {
     {'name': 'Software Installations'}
   ],
   subCategory : {
-  'Engineering/MCA': ['C_Programming', 'Java', 'Python'],
+  'Engineering/MCA': ['C_Language', 'Java', 'Python'],
   'Lab Programming "C"': ['Structures', 'Union','Data Structure']
  },
  chapters: {'C Language': ['Arrays', 'Variables','Structure'],
@@ -26,7 +26,7 @@ export const environment = {
     {'topic': 'Flow Chart in C Language Example', 'link': 'https://www.youtube.com/embed/_5TeH9VxCSk'}
   ]
  }
-}
+};
 
 /*
  * For easier debugging in development mode, you can import the following file
