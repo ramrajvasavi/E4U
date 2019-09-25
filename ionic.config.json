@@ -1,5 +1,7 @@
 {
   "name": "E4U",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

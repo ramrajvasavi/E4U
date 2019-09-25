@@ -18,8 +18,7 @@ export class Chapter {
   private route: Router,
   private http: HttpClient ) { }
 
-  ngOnInit() {
-   // const chapters = environment.chapters;
+  ionViewWillEnter() {
     if(localStorage.getItem('isBackBtn') !== undefined && localStorage.getItem('isBackBtn') !== null){
       if(localStorage.getItem('isBackBtn') == 'yes') {
       this.chapter = localStorage.getItem('pageValue');
@@ -35,12 +34,16 @@ export class Chapter {
     .subscribe(data => {
       this.chapterTopics = data;
      // this.chapterList = Object.keys(data);
-      
+      this.chapterList = [];
       for(let prop in data) {
         this.chapterList.push(prop); 
       }
-     console.log(this.chapterList);
+    // console.log(this.chapterList);
     });
+  }
+
+  ngOnInit() {
+   
   }
   selTopic(evtObt){
     this.catServ.setSelectedTopic(evtObt.target.innerText);
@@ -51,4 +54,5 @@ export class Chapter {
     localStorage.setItem('isBackBtn', 'yes');
     this.route.navigate(['/home/subcategory']);
   }
+  
 }

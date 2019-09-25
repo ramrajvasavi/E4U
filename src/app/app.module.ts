@@ -12,11 +12,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { ChapterTopicsComponent } from '../app/chapter-topics/chapter-topics.component';
 
 @NgModule({
-  declarations: [AppComponent,
-    ChapterTopicsComponent],
+  declarations: [
+    AppComponent,
+    ChapterTopicsComponent
+  ],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,
-    HttpClientModule],
+  imports: [
+    BrowserModule, 
+    IonicModule.forRoot(), 
+    AppRoutingModule,
+    HttpClientModule
+  ],
   providers: [
     StatusBar,
     SplashScreen,

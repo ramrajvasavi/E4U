@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Events } from '@ionic/angular';
 
 @Component({
   selector: 'app-tabs',

@@ -12,9 +12,13 @@ export class Category {
   categoryList = [];
   constructor(public route: Router,
     private catServ: CategoryService) {}
+    ionViewWillEnter() {
+      this.categoryList = environment.categoryList;
+      localStorage.setItem('isBackBtn', 'no');
+    }
   ngOnInit(){
-    this.categoryList = environment.categoryList;
-    localStorage.setItem('isBackBtn', 'no');
+    /* this.categoryList = environment.categoryList;
+    localStorage.setItem('isBackBtn', 'no'); */
   }
 
   navSubcategory(evt){
